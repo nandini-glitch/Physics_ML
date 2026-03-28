@@ -8,7 +8,7 @@ def run_experiments():
     df = pd.read_csv('data/processed_weather.csv')
     
     # Define Feature Sets
-    raw_feats = ['ALLSKY_SFC_SW_DWN', 'RH2M', 'WS2M', 'PS', 'T_lag1']
+    raw_feats = ['ALLSKY_SFC_SW_DWN', 'RH2M', 'WS2M', 'PS'] 
     phys_feats = raw_feats + ['Rn', 'VPD', 'H_proxy', 'Energy_Imbalance']
     target = 'T2M'
 

@@ -26,19 +26,19 @@ By adding physical proxies, we achieved a significant reduction in error compare
 
 ### 1. Actual vs. Predicted
 The model shows a strong linear correlation, with predictions tightly hugging the ideal 45-degree line.
-![Actual vs Predicted](plot_1_actual_vs_pred.png)
+![Actual vs Predicted](backend/plot_1_actual_vs_pred.png)
 
 ### 2. The Impact of Physics
 Our analysis proves that physical drivers like Surface Pressure (PS) and VPD are more influential than raw humidity or wind speed.
-![Feature Importance](plot_4_feature_importance.png)
+![Feature Importance](backend/plot_4_feature_importance.png)
 
 ### 3. Reliability Analysis
 The Physics-Informed model (Green) shows a much narrower error distribution compared to the Pure ML model (Grey), indicating higher reliability and fewer "extreme" misses.
-![Error Distribution](plot_9_distribution.png)
+![Error Distribution](backend/plot_9_distribution.png)
 
 ### 4. Extreme Heat Performance
 The model was specifically tested on days exceeding 32.1°C. The integration of thermodynamics allowed the model to maintain stability where standard AI typically fails.
-![Extreme Heat Analysis](plot_7_extreme_analysis.png)
+![Extreme Heat Analysis](backend/plot_7_extreme_analysis.png)
 
 ### Setup 
 ```bash
